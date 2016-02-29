@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8"/>
+    <title>sample for Expression</title>
+</head>
+<body>
+    <ul>
+        <li th:text="#{li.message}"></li>
+        <li th:text="#{li.message1('zhangwei')}"></li>
+        <!--<li th:text="${{current}}"></li>-->
+        <li th:text="${li}"></li>
+        <!--get query string from request like index?id=1; return id=1-->
+        <li th:text="${#httpServletRequest.queryString}"></li>
+        <li th:text="${#dates.now()}"></li>
+        <!--<li th:text=""></li>-->
+
+    </ul>
+
+</body>
+</html>
